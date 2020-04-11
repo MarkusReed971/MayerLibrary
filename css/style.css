@@ -5,8 +5,8 @@ font-family: 'Lato', sans-serif; Текста
 
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    letter-spacing: 1px;
+    font-size: 19px;
+    letter-spacing: 0.5px;
     box-sizing: border-box;
 }
 
@@ -22,6 +22,24 @@ a {
 a:hover {
     color: #fff15b;
     text-decoration: none;
+    transition: 0.3s    ;
+}
+
+input {
+    outline: none;
+    color: #242424;
+    cursor: pointer;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+p {
+    margin: 0;
 }
 
 .navOuter {
@@ -29,7 +47,7 @@ a:hover {
 }
 
 nav {
-    padding-left: 200px;
+    padding-left: 190px;
 }
 
 nav a {
@@ -42,7 +60,7 @@ nav a {
 }
 
 nav a+a {
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 nav a:hover {
@@ -51,8 +69,12 @@ nav a:hover {
     border-color: #fff586;
 }
 
+.thisPage {
+    border-color: #fff586;
+}
+
 .headerInner {
-    padding: 37px 0;
+    padding: 37px 80px;
     display: flex;
     justify-content: space-between;
 }
@@ -62,9 +84,85 @@ nav a:hover {
     text-transform: uppercase;
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 63px;
 }
 
 .loginBox {
-    font-weight: 300;line-height: 45px;
+    font-weight: 300;
+    line-height: 63px;
+}
+
+.search {
+    border: solid 1px #eeeeee;
+    border-radius: 35px;
+    padding: 5px;
+}
+
+.search ::placeholder {
+    color: #aaaaaa;
+}
+
+.button {
+    border: none;
+    border-radius: 35px;
+    line-height: 50px;
+    padding: 0 30px;
+    background-color: #fff586;  
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #242424;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.searchText {
+    padding: 12px;
+    margin: 0 50px;
+    border: none;
+    width: 600px;
+}
+
+/*
+Затычка вместо слайдера начинается здесь
+*/
+
+.sliderItem {
+    background-image: url(../image/library_bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 220px 0 220px;
+    position: relative;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.blackout {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.welcomeText {
+    margin-bottom: 10px;
+}
+
+.sliderButton {
+    margin-top: 40px;
+}
+
+.sliderText {
+    width: 45%;
+    font-size: 22px;
+}
+
+.sliderContant {
+    padding-left: 200px;
 }
