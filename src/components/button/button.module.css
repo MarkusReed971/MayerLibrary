@@ -1,0 +1,15 @@
+.button {
+    border: none;
+    border-radius: 35px;
+    line-height: 50px;
+    padding: 0 30px;
+    background-color: #fff586;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #242424;
+    color: #ffffff;
+    transition: 0.3s;
+}

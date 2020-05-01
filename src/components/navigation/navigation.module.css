@@ -1,0 +1,30 @@
+.outer {
+    background-color: #242424;
+}
+
+nav {
+    padding-left: 190px;
+}
+
+nav a {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 20px 0 18px;
+    display: inline-block;
+    border-bottom: solid 2px #242424;
+}
+
+nav a+a {
+    margin-left: 50px;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    border-color: #fff586;
+}
+
+.thisPage {
+    border-color: #fff586;
+}

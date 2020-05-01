@@ -1,0 +1,11 @@
+.books {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding-bottom: 50px;
+}
+
+.moreButton {
+    margin: 0 50% 50px;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,16 @@
+.search {
+    border: solid 1px #eeeeee;
+    border-radius: 35px;
+    padding: 5px;
+}
+
+.search ::placeholder {
+    color: #aaaaaa;
+}
+
+.searchText {
+    padding: 12px;
+    margin: 0 50px;
+    border: none;
+    width: 600px;
+}
