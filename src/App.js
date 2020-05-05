@@ -2,22 +2,25 @@ import React from 'react';
 import './App.css';
 import Navigation from "./components/navigation/Navigation";
 import Header from "./components/header/Header";
-import Slider from "./components/slider/Slider"
-import Popular from './components/popular/Popular'
-import Contacts from './components/contacts/Contacts'
 import Footer from './components/footer/Footer'
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import Main from "./components/main/Main";
 
 const App = () => {
-  return (
-    <div className="App">
-      <Navigation />
-      <Header />
-      <Slider />
-      <Popular />
-      <Contacts />
-      <Footer />
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <Navigation/>
+                <Header/>
+                <Switch>
+                    <Route path='/'>
+                        <Main/>
+                    </Route>
+                </Switch>
+                <Footer/>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;

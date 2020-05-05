@@ -6,9 +6,9 @@ const Navigation = () => {
         <div className={style.outer}>
             <div className="container">
                 <nav>
-                    <a href="#" className={style.thisPage}>Главная</a>
-                    <a href="#">Каталог</a>
-                    <a href="#">О нас</a>
+                    <a href="/" className={style.thisPage}>Главная</a>
+                    <a href="/catalog">Каталог</a>
+                    <a href="/about_as">О нас</a>
                 </nav>
             </div>
         </div>
